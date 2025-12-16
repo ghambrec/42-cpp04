@@ -6,7 +6,7 @@
 #    By: ghambrec <ghambrec@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/07 10:41:45 by ghambrec          #+#    #+#              #
-#    Updated: 2025/12/16 11:06:50 by ghambrec         ###   ########.fr        #
+#    Updated: 2025/12/16 18:09:05 by ghambrec         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,9 @@ VPATH =	src
 SRCS =	main.cpp \
 		Animal.cpp \
 		Cat.cpp \
-		Dog.cpp
+		Dog.cpp \
+		WrongAnimal.cpp \
+		WrongCat.cpp
 
 # obejct files
 OBJ_DIR = obj
