@@ -6,7 +6,7 @@
 /*   By: ghambrec <ghambrec@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 11:07:25 by ghambrec          #+#    #+#             */
-/*   Updated: 2025/12/16 17:52:40 by ghambrec         ###   ########.fr       */
+/*   Updated: 2026/01/14 12:41:57 by ghambrec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,9 @@ Cat::Cat(const Cat &other)
 
 Cat& Cat::operator=(const Cat &other)
 {
-	Animal::operator=(other);
 	std::cout << "[Cat] assignment oerator called\n";
+	if (this != &other)
+		Animal::operator=(other);
 	return (*this);
 }
 

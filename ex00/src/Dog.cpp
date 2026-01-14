@@ -6,7 +6,7 @@
 /*   By: ghambrec <ghambrec@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 11:07:23 by ghambrec          #+#    #+#             */
-/*   Updated: 2025/12/16 17:52:47 by ghambrec         ###   ########.fr       */
+/*   Updated: 2026/01/14 12:42:28 by ghambrec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,9 @@ Dog::Dog(const Dog &other)
 
 Dog& Dog::operator=(const Dog &other)
 {
-	Animal::operator=(other);
 	std::cout << "[Dog] assignment oerator called\n";
+	if (this != &other)
+		Animal::operator=(other);
 	return (*this);
 }
 
