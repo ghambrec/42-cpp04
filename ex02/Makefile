@@ -6,7 +6,7 @@
 #    By: ghambrec <ghambrec@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/07 10:41:45 by ghambrec          #+#    #+#              #
-#    Updated: 2026/01/14 12:48:15 by ghambrec         ###   ########.fr        #
+#    Updated: 2026/01/14 13:02:34 by ghambrec         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++17
 FLAG_OPTIMIZING = -O2
-FLAG_DEBUG = -g -O0Abstract class
+FLAG_DEBUG = -g -O0
 
 # header files
 INCLUDE = ./inc

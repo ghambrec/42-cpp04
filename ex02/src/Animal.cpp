@@ -6,7 +6,7 @@
 /*   By: ghambrec <ghambrec@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 11:07:27 by ghambrec          #+#    #+#             */
-/*   Updated: 2026/01/14 12:56:10 by ghambrec         ###   ########.fr       */
+/*   Updated: 2026/01/14 12:56:50 by ghambrec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,11 +43,6 @@ Animal& Animal::operator=(const Animal &other)
 Animal::~Animal()
 {
 	std::cout << "[Animal " << type_ << "] destroyed\n";
-}
-
-void Animal::makeSound(void) const
-{
-	std::cout << "[Animal " << type_ << "] *normal animal sound*\n";
 }
 
 const std::string& Animal::getType(void) const

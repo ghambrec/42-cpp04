@@ -6,7 +6,7 @@
 /*   By: ghambrec <ghambrec@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 11:00:33 by ghambrec          #+#    #+#             */
-/*   Updated: 2026/01/08 09:03:07 by ghambrec         ###   ########.fr       */
+/*   Updated: 2026/01/14 12:57:05 by ghambrec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ class Animal
 		Animal& operator=(const Animal &other);
 		virtual ~Animal();
 
-		virtual void makeSound(void) const;
+		virtual void makeSound(void) const = 0;
 		const std::string& getType(void) const;
 };

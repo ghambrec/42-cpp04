@@ -6,7 +6,7 @@
 /*   By: ghambrec <ghambrec@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 10:59:40 by ghambrec          #+#    #+#             */
-/*   Updated: 2026/01/14 11:59:10 by ghambrec         ###   ########.fr       */
+/*   Updated: 2026/01/14 13:00:46 by ghambrec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,38 +48,7 @@ int main()
 		delete a;
 	}
 
-	// deep copy tests
-	std::cout << "########## DEEP COPY TEST [COPY CONSTRUCTOR] ##########\n";
-	Cat percy;
-	percy.setIdea(0, "cuddle with human");
-	
-	Cat mico(percy);
-	std::cout << "percy: " << percy.getIdea(0) << "\n";
-	std::cout << "mico:  " << mico.getIdea(0) << "\n";
-	
-	mico.setIdea(0, "clean myself");
-	std::cout << "percy: " << percy.getIdea(0) << "\n";
-	std::cout << "mico:  " << mico.getIdea(0) << "\n";
-	
-	
-	std::cout << "########## DEEP COPY TEST [OPERATOR=] ##########\n";
-	Cat lucy;
-	lucy.setIdea(0, "get some rest");
-
-	Cat momo;
-	momo.setIdea(0, "get a mouse");
-
-	std::cout << "lucy: " << lucy.getIdea(0) << "\n";
-	std::cout << "momo: " << momo.getIdea(0) << "\n";
-	
-	momo = lucy;
-	std::cout << "lucy: " << lucy.getIdea(0) << "\n";
-	std::cout << "momo: " << momo.getIdea(0) << "\n";
-
-	momo.setIdea(0, "get a bird");
-	std::cout << "lucy: " << lucy.getIdea(0) << "\n";
-	std::cout << "momo: " << momo.getIdea(0) << "\n";
-
+	//Animal test;
 
 	return (0);
 }
