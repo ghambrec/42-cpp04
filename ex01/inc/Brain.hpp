@@ -6,7 +6,7 @@
 /*   By: ghambrec <ghambrec@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 08:58:08 by ghambrec          #+#    #+#             */
-/*   Updated: 2026/01/08 10:22:36 by ghambrec         ###   ########.fr       */
+/*   Updated: 2026/01/13 15:16:57 by ghambrec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,7 @@ class Brain
 		Brain(const Brain &other);
 		Brain& operator=(const Brain &other);
 		~Brain();
+
+		void setIdea(int idx, const std::string &idea);
+		const std::string &getIdea(int idx) const;
 };

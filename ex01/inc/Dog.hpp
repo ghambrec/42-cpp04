@@ -6,7 +6,7 @@
 /*   By: ghambrec <ghambrec@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 11:02:55 by ghambrec          #+#    #+#             */
-/*   Updated: 2026/01/08 09:03:36 by ghambrec         ###   ########.fr       */
+/*   Updated: 2026/01/13 15:28:04 by ghambrec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,7 @@ class Dog : public Animal
 		virtual ~Dog();
 	
 		void makeSound(void) const override;
+
+		void setIdea(int idx, const std::string &idea);
+		const std::string &getIdea(int idx) const;
 };
